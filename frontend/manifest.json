@@ -1,0 +1,46 @@
+{
+  "name": "SniffOut",
+  "version": "1.0",
+  "description": "",
+  "permissions": [
+    "http://10.196.8.192:5002/*",
+    "http://10.196.8.192:5001/*",
+    "http://10.196.8.192:5000/*",
+    "tabs",
+    "activeTab",
+    "declarativeContent",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/9.png",
+      "32": "images/9.png",
+      "48": "images/9.png",
+      "128": "images/9.png"
+    }
+  },
+  "icons": {
+    "16": "images/9.png",
+    "32": "images/9.png",
+    "48": "images/9.png",
+    "128": "images/9.png"
+  },
+  "commands": {
+    "refresh_url": {
+      "suggested_key": {
+        "default": "Alt + R",
+        "mac": "Alt+R"
+      },
+      "description": "Refresh the defined url"
+    }
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
